@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="./src/style.css" />
+
+        <title>Turtle Graphics Block Language</title>
+    </head>
+    <body class="bg-slate-800">
+        <section class="max-w-7xl mx-auto h-screen">
+            <header class="bg-blue-600">
+                <nav class="flex justify-between items-center py-3 px-6">
+                    <ul class="flex gap-x-16 items-center">
+                        <li>
+                            <a class="text-2xl text-white" href="/"
+                                >Turtle Gaphics Block Language</a
+                            >
+                        </li>
+                        <div class="flex gap-x-6 pt-1">
+                            <li>
+                                <button data-role="save" class="text-white">
+                                    Save
+                                </button>
+                            </li>
+                            <li>
+                                <button data-role="load" class="text-white">
+                                    Load
+                                </button>
+                            </li>
+                            <li>
+                                <button data-role="clear" class="text-white">
+                                    Clear
+                                </button>
+                            </li>
+                        </div>
+                    </ul>
+                    <ul>
+                        <li>
+                            <select
+                                class="p-1"
+                                data-role="choose-example"
+                                name="choose example"
+                            >
+                                <option value="">Choose Example</option>
+                                <option value="triangle">Triangle</option>
+                                <option value="circle">Tiny Circle</option>
+                                <option value="spiral">Spiral</option>
+                            </select>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <main class="">
+                <div
+                    class="grid gap-x-4 grid-rows-[32rem] grid-cols-[16rem_24rem_auto] px-6"
+                >
+                    <section>
+                        <div class="pb-2 pt-3">
+                            <h2 class="text-white text-lg">Menu</h2>
+                        </div>
+                        <div
+                            data-role="menu"
+                            class="group h-full bg-slate-700 overflow-y-auto data-[over]:bg-slate-500"
+                        ></div>
+                    </section>
+                    <section>
+                        <div class="pb-2 pt-3">
+                            <h2 class="text-white text-lg">Script</h2>
+                        </div>
+                        <div
+                            data-role="script"
+                            class="group pb-2 h-full bg-slate-700 overflow-y-auto data-[over]:bg-green-600"
+                        ></div>
+                    </section>
+                    <section>
+                        <div class="pb-2 pt-3">
+                            <h2 class="text-white text-lg">Canvas</h2>
+                        </div>
+                        <div
+                            data-role="canvas-placeholder"
+                            class="w-full h-full"
+                        ></div>
+                        <canvas
+                            data-role="canvas"
+                            class="bg-white absolute"
+                        ></canvas>
+                    </section>
+                </div>
+            </main>
+        </section>
+
+        <template id="block-template">
+            <div
+                data-role="block"
+                draggable="true"
+                class="bg-slate-300 rounded-[4px] text-black text-sm px-3 py-2 m-2 mb-0 cursor-move data-[running]:outline-2 data-[running]:outline-red-300 data-[running]:outline data-[dragging]:opacity-20"
+            ></div>
+        </template>
+
+        <template id="container-template">
+            <div
+                data-role="container"
+                class="pb-2 mt-2 group-data-[role=script]:mb-1 -mr-[12px] border border-r-0 rounded-tl-lg rounded-bl-lg bg-slate-700 border-slate-800 ml-6 group-data-[over]:bg-green-600"
+            ></div>
+        </template>
+
+        <template id="input-template">
+            <input
+                type="number"
+                class="mx-2 pl-[0.125rem] bg-white text-slate-900 w-12 appearance-none"
+            />
+        </template>
+
+        <script type="module" src="/src/main.ts"></script>
+    </body>
+</html>
