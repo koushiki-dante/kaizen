@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <link rel="stylesheet" href="./src/style.css" />
+
+        <title>Social Link-Sharing</title>
+    </head>
+
+    <body class="bg-theme-950 h-screen antialiased">
+        <main class="flex items-center justify-center h-full px-8">
+            <article class="bg-theme-925 text-white p-8 space-y-6 rounded-2xl max-w-[480px]">
+                <div class="flex flex-col items-center gap-y-4">
+                    <div class="relative inline-flex w-max">
+                        <div class="w-28 max-h-28 rounded-full block aspect-square overflow-hidden">
+                            <img 
+                                src="/chesterton.jpg"
+                                class="h-full w-full object-cover" 
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="text-center space-y-2">
+                        <h1 class="text-2xl text-theme-50">Gilbert Keith Chesterton</h1>
+                        <span class="inline-block text-[#B1A9FF]">Kensington, London, England</span>
+                    </div>
+                    <p class="text-center text-theme-100">Writer, philosopher, Christian apologist, and literary and art critic.</p>
+                </div>
+
+                <ul class="space-y-4">
+                    <li>
+                        <a class="inline-block py-3 px-7 bg-theme-700 w-full rounded-md text-center text-theme-50 hover:bg-theme-800 focus:bg-theme-800" href="https://www.tiktok.com/">
+                            <span class="text-theme-100">TikTok</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="inline-block py-3 px-7 bg-theme-700 w-full rounded-md text-center text-theme-50 hover:bg-theme-800 focus:bg-theme-800" href="https://twitter.com/">
+                            <span class="text-theme-100">Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="inline-block py-3 px-7 bg-theme-700 w-full rounded-md text-center text-theme-50 hover:bg-theme-800 focus:bg-theme-800 " href="https://br.linkedin.com/">
+                            <span class="text-theme-100">Linkedin</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="inline-block py-3 px-7 bg-theme-700 w-full rounded-md text-center text-theme-50 hover:bg-theme-800 focus:bg-theme-800" href="https://www.instagram.com/">
+                            <span class="text-theme-100">Instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="inline-block py-3 px-7 bg-theme-700 w-full rounded-md text-center text-theme-50 hover:bg-theme-800 focus:bg-theme-800" href="https://www.facebook.com/">
+                            <span class="text-theme-100">Facebook</span>
+                        </a>
+                    </li>
+                </ul>
+            </article>
+        </main>
+
+        <script type="module" src="/src/main.ts"></script>
+    </body>
+</html>
