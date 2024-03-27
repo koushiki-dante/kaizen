@@ -6,4 +6,4 @@ A solution to a challenge from the [Frontend Mentor](https://www.frontendmentor.
 
 ## Preview
 
-You can see a live preview of the solution on [this page](https://easybank-delta-snowy.vercel.app).
+You can see a live preview of the solution on [this page](https://kaizen-8t1x.vercel.app/).
