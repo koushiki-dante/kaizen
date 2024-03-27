@@ -6,4 +6,4 @@ A TypeScript implementation of "Blockcode: A Visual Programming Toolkit" from th
 
 ## Preview
 
-You can see a live preview of the application on [this page](https://block-code-seven.vercel.app/).
+You can see a live preview of the application on [this page](https://kaizen-sand-eight.vercel.app/).
