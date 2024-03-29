@@ -25,6 +25,3 @@ npm install
 npm run dev
 ```
 Visit http://localhost:5173 to view the app.
-## Preview
-
-You can see a live preview of the solution on [this page](https://intro-section-rust.vercel.app).
